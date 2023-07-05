@@ -23,6 +23,7 @@
         android:layout_columnWeight="1"
         android:textColor="#fff"
         android:drawableLeft="@drawable/student"
+        android:id="@+id/tampilMahasiswaButton"
         android:text="Master Mahasiswa"></Button>
 
 </GridLayout>

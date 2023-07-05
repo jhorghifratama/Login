@@ -20,6 +20,7 @@
         android:layout_gravity="bottom|right"
         android:layout_marginRight="20dp"
         android:layout_marginBottom="20dp"
+        android:id="@+id/addButton"
         android:src="@android:drawable/ic_input_add">
 
     </com.google.android.material.floatingactionbutton.FloatingActionButton>
