@@ -9,8 +9,8 @@ import android.widget.Button;
 
 public class MenuActivity extends AppCompatActivity
 {
-    private Button _tampilMahasiswaButton, _tampilForexButton, _tampilCuacaButton;
-    private Intent _tampilMahasiswaIntent, _tampilForexIntent, _tampilCuacaIntent;
+    private Button _tampilMahasiswaButton, _tampilForexButton, _tampilCuacaButton, _tampilImplicitIntentButton, _tampilTabLayoutButton;
+    private Intent _tampilMahasiswaIntent, _tampilForexIntent, _tampilCuacaIntent, _tampilImplicitIntent, _tampilTabLayoutIntent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -21,6 +21,8 @@ public class MenuActivity extends AppCompatActivity
         initTampilMahasiswaButton();
         initTampilForexButton();
         initTampilCuacaButton();
+        initTampilImplicitIntentButton();
+        iniTampilTabLayoutButton();
     }
 
     private void  initTampilMahasiswaButton()
@@ -63,4 +65,31 @@ public class MenuActivity extends AppCompatActivity
             }
         });
     }
+
+    private void initTampilImplicitIntentButton()
+    {
+        _tampilImplicitIntentButton = findViewById(R.id.tampilImplicitButton);
+
+        _tampilImplicitIntentButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                _tampilImplicitIntent = new Intent(getApplicationContext(), ImplicitIntentMainActivity.class);
+                startActivity(_tampilImplicitIntent);
+            }
+        });
+    }
+
+    private void initTampilTabLayout()
+    {
+        _tampilTabLayoutButton = findViewById(R.id.tampilTabLayout);
+
+        _tampilTabLayoutButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                _tampilTabLayoutIntent  = new Intent(getApplicationContext(), ImplicitIntentMainActivity.class);
+                startActivity(_tampilTabLayoutIntent);
+            }
+        });
+    }
+
 }
