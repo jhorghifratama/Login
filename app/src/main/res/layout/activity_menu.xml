@@ -52,7 +52,7 @@
         android:layout_width="wrap_content"
         android:layout_columnWeight="1"
         android:background="@android:color/transparent"
-        android:drawableLeft="@drawable/img_dollar_128"
+        android:drawableRight="@drawable/img_tab_layout"
         android:textColor="#fff"
         android:text="Tab Layout"
         android:id="@+id/tampilTabLayout"></Button>

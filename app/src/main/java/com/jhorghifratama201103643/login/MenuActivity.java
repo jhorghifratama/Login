@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.google.android.material.tabs.TabLayout;
+
 public class MenuActivity extends AppCompatActivity
 {
     private Button _tampilMahasiswaButton, _tampilForexButton, _tampilCuacaButton, _tampilImplicitIntentButton, _tampilTabLayoutButton;
@@ -22,7 +24,7 @@ public class MenuActivity extends AppCompatActivity
         initTampilForexButton();
         initTampilCuacaButton();
         initTampilImplicitIntentButton();
-        iniTampilTabLayoutButton();
+        initTampilTabLayoutButton();
     }
 
     private void  initTampilMahasiswaButton()
@@ -79,14 +81,14 @@ public class MenuActivity extends AppCompatActivity
         });
     }
 
-    private void initTampilTabLayout()
+    private void initTampilTabLayoutButton()
     {
         _tampilTabLayoutButton = findViewById(R.id.tampilTabLayout);
 
         _tampilTabLayoutButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                _tampilTabLayoutIntent  = new Intent(getApplicationContext(), ImplicitIntentMainActivity.class);
+                _tampilTabLayoutIntent  = new Intent(getApplicationContext(), TabLayoutMainActivity.class);
                 startActivity(_tampilTabLayoutIntent);
             }
         });
