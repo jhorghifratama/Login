@@ -11,8 +11,8 @@ import com.google.android.material.tabs.TabLayout;
 
 public class MenuActivity extends AppCompatActivity
 {
-    private Button _tampilMahasiswaButton, _tampilForexButton, _tampilCuacaButton, _tampilImplicitIntentButton, _tampilTabLayoutButton;
-    private Intent _tampilMahasiswaIntent, _tampilForexIntent, _tampilCuacaIntent, _tampilImplicitIntent, _tampilTabLayoutIntent;
+    private Button _tampilMahasiswaButton, _tampilForexButton, _tampilCuacaButton, _tampilImplicitIntentButton, _tampilTabLayoutButton, _tampilHotelAppButton;
+    private Intent _tampilMahasiswaIntent, _tampilForexIntent, _tampilCuacaIntent, _tampilImplicitIntent, _tampilTabLayoutIntent, _tampilHotelAppIntent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -25,6 +25,12 @@ public class MenuActivity extends AppCompatActivity
         initTampilCuacaButton();
         initTampilImplicitIntentButton();
         initTampilTabLayoutButton();
+        initTampilHotelAppButton();
+
+        Bundle bundle = getIntent().getExtras();
+        String activityTitle = bundle.getString("username");
+
+        this.setTitle("Menu " + activityTitle);
     }
 
     private void  initTampilMahasiswaButton()
@@ -94,4 +100,16 @@ public class MenuActivity extends AppCompatActivity
         });
     }
 
+    private void initTampilHotelAppButton()
+    {
+        _tampilHotelAppButton = findViewById(R.id.tampilHotelApp);
+
+        _tampilHotelAppButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                _tampilHotelAppIntent  = new Intent(getApplicationContext(), HotelAppMainActivity.class);
+                startActivity(_tampilHotelAppIntent);
+            }
+        });
+    }
 }

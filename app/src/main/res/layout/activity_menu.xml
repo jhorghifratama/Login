@@ -57,6 +57,16 @@
         android:text="Tab Layout"
         android:id="@+id/tampilTabLayout"></Button>
 
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_columnWeight="1"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/img_hotel"
+        android:textColor="#fff"
+        android:text="Hotel App"
+        android:id="@+id/tampilHotelApp"></Button>
+
 
 
 </GridLayout>
