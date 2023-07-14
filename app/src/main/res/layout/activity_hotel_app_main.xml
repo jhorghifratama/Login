@@ -15,7 +15,7 @@
             android:layout_height="280dp"
             android:scaleType="centerCrop"
             android:adjustViewBounds="true"
-            android:id="@+id/imageview1"
+            android:id="@+id/imageView1"
             android:background="#999">
         </ImageView>
         <LinearLayout
@@ -31,6 +31,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="$74"
+                android:textColor="#fff"
                 android:textSize="18sp"
                 android:textStyle="bold"
                 android:layout_marginBottom="4dp">
@@ -39,8 +40,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Per Night"
-                android:textSize="13sp"
-                android:textColor="#fff">
+                android:textColor="#fff"
+                android:textSize="13sp">
             </TextView>
         </LinearLayout>
     </FrameLayout>
@@ -55,24 +56,15 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"></TextView>
-            <LinearLayout
+                android:text="The Hotel is but a short walk away"
+                android:textSize="24sp"
+                android:gravity="center"></TextView>
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="The beach is but a short walk away"
-                    android:textSize="24sp"
-                    android:gravity="center"></TextView>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="16dp"
-                    android:gravity="center"
-                    android:text="Inspired by the cool atmosphere of the countryside in Nusantara and luxury facilities of villa, we create a classy and comfortable hotel. By uniting the elements, we serve Nusantara’s Green Villa for you. The continous efforts of the management to add the services and multiply the comforts of the Hughes, have found their reward in the ever-increasing-favor which the hotel enjoys. One day, you will have everything you wish for. Start working towards it today. You become rich in your mind long before your become rich in your bank account. The only thing that overcomes hard luck is hard work. Don't blame distractions, improve your focus. Powerful things happen when your start putting in work to achieve your goals. Appreciate hard times, someday they'll just be another chapter in your success story. If you take care of your mind, you take care of the world. Ask for what you want and be prepared to get it. Don't practice until you get it right. Practice until you can't get it wrong. Ambition is the path to success. Persistence is the vehicle you arrive in. Don't compare yourself to others. Be your own competition. If you really want it, you will plan for it. If you really want it, you will work for it. If you really want it, you will sacrifice for it.Life is very interesting in the end, some of your greatest pains, become your greatest strengths. Success isn't always about greatness. It's about consistency. Consistent hard work leads to success. Greatness will come. Careers like rockets, don't always take off on time. The tricks is to always keep the engine running. The rewards for work well done is the opportunity to do more. Good things may come to those who wait, but the only the things left those who hustle.""></TextView>
-            </LinearLayout>
+                android:layout_margin="16dp"
+                android:gravity="center"
+                android:text="The continous efforts of the management to add the services and multiply the comforts of the Hughes, have found their reward in the ever-increasing-favor which the hotel enjoys. One day, you will have everything you wish for. Start working towards it today. You become rich in your mind long before your become rich in your bank account. The only thing that overcomes hard luck is hard work. Don't blame distractions, improve your focus. Powerful things happen when your start putting in work to achieve your goals. Appreciate hard times, someday they'll just be another chapter in your success story. If you take care of your mind, you take care of the world. Ask for what you want and be prepared to get it. Don't practice until you get it right. Practice until you can't get it wrong. Ambition is the path to success. Persistence is the vehicle you arrive in. Don't compare yourself to others. Be your own competition. If you really want it, you will plan for it. If you really want it, you will work for it. If you really want it, you will sacrifice for it.Life is very interesting in the end, some of your greatest pains, become your greatest strengths. Success isn't always about greatness. It's about consistency. Consistent hard work leads to success. Greatness will come. Careers like rockets, don't always take off on time. The tricks is to always keep the engine running. The rewards for work well done is the opportunity to do more. Good things may come to those who wait, but the only the things left those who hustle."></TextView>
         </LinearLayout>
     </ScrollView>
     <Button
@@ -80,6 +72,5 @@
         android:layout_height="wrap_content"
         android:background="@color/purple_700"
         android:textColor="#ffffff"
-        android:text="Book Now!!"></Button>
+        android:text="Book Now!!!"></Button>
 </LinearLayout>
-

@@ -11,8 +11,8 @@ import com.google.android.material.tabs.TabLayout;
 
 public class MenuActivity extends AppCompatActivity
 {
-    private Button _tampilMahasiswaButton, _tampilForexButton, _tampilCuacaButton, _tampilImplicitIntentButton, _tampilTabLayoutButton, _tampilHotelAppButton;
-    private Intent _tampilMahasiswaIntent, _tampilForexIntent, _tampilCuacaIntent, _tampilImplicitIntent, _tampilTabLayoutIntent, _tampilHotelAppIntent;
+    private Button _tampilMahasiswaButton, _tampilForexButton, _tampilCuacaButton, _tampilImplicitIntentButton, _tampilTabLayoutButton, _tampilHotelAppButton, _tampilWebViewLanjutanButton;
+    private Intent _tampilMahasiswaIntent, _tampilForexIntent, _tampilCuacaIntent, _tampilImplicitIntent, _tampilTabLayoutIntent, _tampilHotelAppIntent, _tampilWebViewLanjutanIntent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -26,6 +26,8 @@ public class MenuActivity extends AppCompatActivity
         initTampilImplicitIntentButton();
         initTampilTabLayoutButton();
         initTampilHotelAppButton();
+        initTampilWebViewLanjutanBUtton();
+
 
         Bundle bundle = getIntent().getExtras();
         String activityTitle = bundle.getString("username");
@@ -109,6 +111,19 @@ public class MenuActivity extends AppCompatActivity
             public void onClick(View v) {
                 _tampilHotelAppIntent  = new Intent(getApplicationContext(), HotelAppMainActivity.class);
                 startActivity(_tampilHotelAppIntent);
+            }
+        });
+    }
+
+    private void initTampilWebViewLanjutanBUtton()
+    {
+        _tampilWebViewLanjutanButton = findViewById(R.id.tampilWebViewLanjutan);
+
+        _tampilWebViewLanjutanButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                _tampilWebViewLanjutanIntent  = new Intent(getApplicationContext(), WebViewLanjutanMainActivity.class);
+                startActivity(_tampilWebViewLanjutanIntent);
             }
         });
     }
